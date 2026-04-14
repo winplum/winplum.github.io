@@ -1,0 +1,79 @@
+* {
+	font-family: 'Microsoft YaHei';
+
+}
+        
+body { /*用 edge 可以展现效果*/
+	overflow: hidden;
+	width: 100vw;
+	height: 100hw;
+	background-color: #000080;
+}
+        
+.container {
+margin-top: 45px;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: clamp(30px, 5.4vw, 90px);
+	font-weight:bold;
+	color: #FFD700;
+}
+hr {
+	border: none;
+	width:90vw;
+	height: 2px;
+	background: linear-gradient(to right, #FFD700, orange, white,  orange, #FFD700);
+	/*border-radius: 2px;*/
+}
+
+.arrange {
+	margin-top:40px;
+	display: flex;
+	gap:clamp(5px, 1.5vw, 30px);
+	justify-content: center;
+	align-items: center;
+	/*border: white solid 1px;*/
+	font-size: clamp(30px, 4vw, 80px);
+	font-weight: bold;
+	color: white;
+}
+
+.affair {
+	flex-direction: row;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	/*border:solid 1px yellow;*/
+}
+.timebox {
+	flex-direction: column;
+	padding:clamp(10px, 1.5vw, 30px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border:solid 2px yellow;
+	font-size:clamp(20px, 2vw, 40px);
+	color: #CCFF66;
+	line-height: clamp(15px, 1.5vw, 30px);
+}
+.notes{
+	font-size: clamp(50px, 8vw, 120px);
+	font-weight:bold;
+	color: orange;
+	text-align:center;
+	/*border: 1px solid orange;*/
+	line-height: 1.5rem;
+}
+
+.notes img{
+	margin-top:40px;
+	width: clamp(50px, 90vw, 1800px);
+	height: auto;
+}
+

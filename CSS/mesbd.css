@@ -1,0 +1,107 @@
+body {
+	margin: 0;
+	padding: 0;
+	}
+.main {
+	display: grid;
+	grid-template-areas:
+		"header header header"
+		"leftside container rightside"
+		"footer footer footer";
+	grid-template-columns: 25% 1fr 25%;
+	grid-template-rows: 80px auto 40px;
+	gap: 5px;
+	box-sizing: border-box;
+	}
+.header {
+	grid-area: header;
+	background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	font-family: "Microsoft YaHei";
+	color:white;
+	font-size: 40px;
+	font-weight: 700;
+	}
+.footer {
+	grid-area: footer;
+	background-color: #badc58;
+	font-size: 14px;
+	}
+.leftside {
+	grid-area: leftside;
+	}
+.ark{
+	width: 100%;  	
+}
+.rightside{
+	grid-area: rightside;
+	}
+.container {
+	grid-area: container;
+    display: flex;
+	align-items: center;
+    flex-direction: column; /* 垂直布局 */
+}
+textarea {
+	margin-left: -15%;
+	width: 120%; 
+	height: 100px; 
+	padding: 5px 20px;
+	border-radius: 10px; 
+	font-family: "Microsoft YaHei UI Light";
+	font-size: 14px;
+	font-weight: bold;
+	line-height:180%;
+	letter-spacing:2px;
+}
+#messages
+ {
+	width: 100%;
+    margin-top: 10px; 
+}
+
+.message {
+    background-color: #f4f4f4; /*删除栏的颜色*/
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+	font-family: "Microsoft YaHei UI Light";
+	font-size: 13px;
+	font-weight: bold;
+	color: #0044AA;
+}
+.delete-button {
+    float: right;
+    cursor: pointer;
+    color: #C00000;
+    background-color: #f0adad; /* 添加背景色 */
+    border: none; /* 移除边框 */
+    padding: 0 5px; /* 添加内边距 */
+    border-radius: 5px; /* 圆角 */
+}
+
+h1 {
+    font-size: 40px;
+    width: fit-content; /* 确保h1的宽度适应其内容 */
+    margin-bottom: 20px; /* 增加h1与留言板内容之间的垂直间距 */
+}
+
+@keyframes rotate {
+            0% {
+                 transform: rotate(0); -webkit-transform: rotate(0); -moz-transform: rotate(0); -o-transform: rotate(0);
+            }
+            20% {
+                 transform: rotate(-2deg); -webkit-transform: rotate(-2deg); -moz-transform: rotate(-2deg); -o-transform: rotate(-2deg);
+            }
+            60% {
+                 transform: rotate(0); -webkit-transform: rotate(0); -moz-transform: rotate(0); -o-transform: rotate(0);
+            }
+            80% {
+                 transform: rotate(2deg); -webkit-transform: rotate(2deg); -moz-transform: rotate(2deg); -o-transform: rotate(2deg);
+            }
+            100% {
+                 transform: rotate(0); -webkit-transform: rotate(0); -moz-transform: rotate(0); -o-transform: rotate(0);
+            }
+        }

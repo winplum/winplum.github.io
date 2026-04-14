@@ -1,0 +1,255 @@
+body {
+	margin: 0;
+	padding: 0;
+	background:#E8E8E8;
+	}
+.container {
+	display: grid;
+	grid-template-areas:
+		"header header"
+		"navbar navbar"
+		"main sidebar"
+		"footer footer";
+	grid-template-columns: 1fr 30%;
+	grid-template-rows: 110px auto 1fr auto;
+	gap: 5px;
+	padding: 10px;
+	box-sizing: border-box;
+	}
+.header {
+	grid-area: header;
+	background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+	color: white;
+	}
+.navbar {
+	grid-area: navbar;
+	display:flex;
+	justify-content:center;
+	background-color: #E8E8E8;
+	}
+.sidebar {
+	grid-area: sidebar;
+	background-color: white;
+	}
+
+
+.video-container {
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+#webcam-video {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  border-radius: 8px;
+  background: #000;
+  margin: 15px 0;
+  border: 2px solid #ddd;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+.btn-secondary {
+  background: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #545b62;
+}
+
+.btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.form-select {
+  padding: 9px 12px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  background: white;
+}
+
+.status {
+  padding: 8px 15px;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+  font-size: 14px;
+  min-width: 200px;
+}
+
+.error {
+  color: #dc3545;
+  padding: 10px;
+  margin-top: 10px;
+  background: #f8d7da;
+  border-radius: 4px;
+  display: none;
+}
+
+.main {
+	grid-area: main;
+	background-color: #fff;
+	}
+.footer {
+	grid-area: footer;
+	background-color: #badc58;
+	}
+.header, .navbar, .main, .sidebar, .footer {
+	padding: 10px;
+	border-radius: 10px; 
+	font-family: "Microsoft YaHei UI Light";
+	font-size: 14px;
+	font-weight: bold;
+	color:#0044AA;
+	line-height:180%;
+	}
+.website {
+	margin-right: 1rem;
+	margin-top: -5px;
+	}
+.website a {
+	color:#0044AA;
+	text-decoration: none;
+        }
+.website a:hover {
+	color: #C00000;
+        }
+p {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	text-indent: 28px;
+}
+.vit {
+	display: grid;
+	grid-template-columns: 36px auto 36px auto;
+	grid-template-rows: repeat(9,auto);
+	gap: 0;
+	box-sizing: border-box;
+	}
+.abox{
+	display: flex;		
+	border: 1px solid #B2B2B2;
+	align-items: center;
+	margin: -0.4px;
+	padding:0 10px;
+	}
+.smallcard {  
+	float: left;
+	width: 49%;
+	border: 1px solid #0044AA;
+	border-radius: 10px;	
+	margin: 5px;
+	padding:5px;
+	box-sizing: border-box;  
+	}
+.tincard {
+	line-height:160%;	
+	border: 1px solid #0044AA;
+	border-radius: 10px;
+	margin:5px;	
+	padding:0 5px;
+	box-sizing: border-box;  
+	}
+.title-1 {
+	display: flex; 
+	align-items: center; 
+	border-radius: 5px; 
+	padding-left:40px;
+	font-family: "Microsoft YaHei";
+	color:#432913;
+	font-size:1.2rem;
+	font-weight:bold;
+	height:40px;
+	background: linear-gradient(to right, #F8E7B6 20%, #CCFF66 50%, hsla(80,60%,80%, 0) 70%);
+	}
+h3 {
+	display: flex; 
+	align-items: center;
+	margin:10px;
+	padding:8px;	
+	border-radius: 5px; 
+	color:#FFD700;
+	background: linear-gradient(to right, 
+		#054dc3 20%, 
+		#00b2fa 40%, 
+		hsla(80,60%,80%, 0) 
+		70%);
+	}
+	
+h4 {
+	text-indent: 20px;
+	margin:0;
+	padding:3px;
+	border-radius: 5px;
+	color:#C00000;
+	background: linear-gradient(to right,
+		#B3E5A1 15%,
+		#DAF2D1 30%,
+		hsla(80,60%,80%, 0) 
+		70%);
+	}
+
+img{
+	position:absolute;	
+}
+.xiaohuiimg{
+	max-width: 100px;
+	height: auto;
+	top:15px;
+	left:60px;
+}
+.titleimg{
+	max-width:300px;
+	height: auto;
+	top:35px;
+	left:200px;
+}
+.ol-cn {list-style-type:cjk-ideographic;}	
+	/*  响应式设计：当屏幕宽度小于800px时 */
+        @media (max-width: 800px) {
+            .container {
+                /* 改变网格模板：单列布局 */
+                grid-template-areas:
+                    "header"
+                    "navbar"
+                    "main"
+                    "sidebar"
+                    "footer";
+                /* 将列定义改为单列 */
+                grid-template-columns: 1fr;
+            }
+			.smallcard {  
+				width: 100%;
+			}
+        }
